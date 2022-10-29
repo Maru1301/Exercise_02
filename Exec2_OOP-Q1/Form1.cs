@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,7 +38,7 @@ namespace Exec2_OOP_Q1
 		private void btnGuess_Click(object sender, EventArgs e)
 		{
 			string guess = GetInput();
-			if (!isInputValid(guess))
+			if (!isValidInput(guess))
 			{
 				return;
 			}
@@ -71,7 +72,7 @@ namespace Exec2_OOP_Q1
 			}
 		}
 
-		private bool isInputValid(string guess)
+		private bool isValidInput(string guess)
 		{
 			if(guess.Length != 4)
 			{
@@ -84,6 +85,17 @@ namespace Exec2_OOP_Q1
 			{
 				MessageBox.Show("Input Error!\nYou need to input 4 numbers!");
 				return false;
+			}
+			for(int i = 0; i < guess.Length; i++)
+			{
+				for(int j = i+1; j < guess.Length; j++)
+				{
+					if (guess[i] == guess[j])
+					{
+						MessageBox.Show("No duplicate numbers!");
+						return false;
+					}
+				}
 			}
 
 			return true;
