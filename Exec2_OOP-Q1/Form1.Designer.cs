@@ -37,10 +37,10 @@
 			// 
 			// btnGuess
 			// 
-			this.btnGuess.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.btnGuess.Location = new System.Drawing.Point(233, 61);
+			this.btnGuess.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.btnGuess.Location = new System.Drawing.Point(233, 28);
 			this.btnGuess.Name = "btnGuess";
-			this.btnGuess.Size = new System.Drawing.Size(88, 35);
+			this.btnGuess.Size = new System.Drawing.Size(134, 53);
 			this.btnGuess.TabIndex = 1;
 			this.btnGuess.Text = "Enter";
 			this.btnGuess.UseVisualStyleBackColor = true;
@@ -48,18 +48,18 @@
 			// 
 			// txtGuess
 			// 
-			this.txtGuess.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.txtGuess.Location = new System.Drawing.Point(83, 61);
+			this.txtGuess.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.txtGuess.Location = new System.Drawing.Point(39, 28);
 			this.txtGuess.Name = "txtGuess";
-			this.txtGuess.Size = new System.Drawing.Size(129, 38);
+			this.txtGuess.Size = new System.Drawing.Size(176, 51);
 			this.txtGuess.TabIndex = 0;
 			// 
 			// btnAgain
 			// 
-			this.btnAgain.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.btnAgain.Location = new System.Drawing.Point(126, 396);
+			this.btnAgain.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.btnAgain.Location = new System.Drawing.Point(121, 388);
 			this.btnAgain.Name = "btnAgain";
-			this.btnAgain.Size = new System.Drawing.Size(153, 36);
+			this.btnAgain.Size = new System.Drawing.Size(158, 44);
 			this.btnAgain.TabIndex = 2;
 			this.btnAgain.Text = "NewGame";
 			this.btnAgain.UseVisualStyleBackColor = true;
@@ -67,18 +67,19 @@
 			// 
 			// txtShow
 			// 
-			this.txtShow.Location = new System.Drawing.Point(83, 127);
+			this.txtShow.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.txtShow.Location = new System.Drawing.Point(63, 99);
 			this.txtShow.Multiline = true;
 			this.txtShow.Name = "txtShow";
 			this.txtShow.ReadOnly = true;
 			this.txtShow.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-			this.txtShow.Size = new System.Drawing.Size(254, 248);
+			this.txtShow.Size = new System.Drawing.Size(285, 266);
 			this.txtShow.TabIndex = 4;
 			// 
 			// btnExit
 			// 
-			this.btnExit.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-			this.btnExit.Location = new System.Drawing.Point(316, 396);
+			this.btnExit.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+			this.btnExit.Location = new System.Drawing.Point(304, 393);
 			this.btnExit.Name = "btnExit";
 			this.btnExit.Size = new System.Drawing.Size(93, 36);
 			this.btnExit.TabIndex = 3;

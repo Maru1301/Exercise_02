@@ -40,6 +40,7 @@ namespace Exec2_OOP_Q1
 			string guess = GetInput();
 			if (!isValidInput(guess))
 			{
+				txtGuess.Text = String.Empty;
 				return;
 			}
 
@@ -52,7 +53,7 @@ namespace Exec2_OOP_Q1
 			if (result.isSuccess)
 			{
 				//todo success lblshow
-				txtShow.Text = result.Hint;
+				txtShow.AppendText(result.Hint);
 				MessageBox.Show("Bingo!!!");
 
 				DialogResult dr =  MessageBox.Show("Do you wanna paly again?", "One more?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -67,8 +68,8 @@ namespace Exec2_OOP_Q1
 			}
 			else
 			{
-				//todo fail lblshow
-				txtShow.Text = result.Hint;
+				txtShow.AppendText(result.Hint);
+				txtGuess.Text = String.Empty;
 			}
 		}
 
@@ -162,7 +163,7 @@ public class Game1A2B
 	{
 		if(guess == answer)
 		{
-			this.Hint += $"[{answer}\t4A0B]";
+			this.Hint = $"[{answer}\t4A0B]";
 			return new GameResult { isSuccess = true, Hint = this.Hint };
 		}
 
@@ -182,7 +183,7 @@ public class Game1A2B
 			}
 		}
 
-		this.Hint += $"{guess}\t{A}A{B}B\r\n";
+		this.Hint = $"{guess}\t{A}A{B}B\r\n";
 		return new GameResult { isSuccess = false, Hint = this.Hint };
 	}
 
